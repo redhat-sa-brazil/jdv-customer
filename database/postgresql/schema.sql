@@ -1,4 +1,4 @@
-CREATE DATABASE cadastro_cliente OWNER redhat;
+--CREATE DATABASE cadastro_cliente OWNER redhat;
 
 create table CADASTRO_CLIENTE (cpf varchar(12),
 nome varchar(40),

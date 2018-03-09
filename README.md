@@ -6,6 +6,7 @@ An JDV Project that connects one database table (Postgresql) and one CSV file.
 ## Folder/files overview
 * [files/renda-cartao.csv](./files/renda-cartao.csv)
 * [database/postgresql/schema.sql](./database/postgresql/schema.sql)
+* [database/initdb-container.sh](./database/initdb-container.sh)
 
 # Standalone Deployment (EAP)
 
@@ -25,7 +26,7 @@ The project source code is in [src](./src) directory and consists in a JBoss Dev
 
 
 ## Database setup
-To create and populate the database table, just run the script [schema.sql](./database/postgresql/schema.sql)
+If you have Docker Engine on your host, just run the [database/initdb-container.sh](./database/initdb-container.sh) script. It will spin up a Postgres conatiner with our DB preloaded for this demo.
 
 ## EAP setup
 It is necessary to have the following resources created in EAP:
